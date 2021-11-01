@@ -14,8 +14,10 @@ void solve(int t){
         }
         int k;
         cin>>k;
+        //sorting the array
         sort(arr,arr+n);
         cout << k << " th element is " << arr[k-1] << "\n";
+        //checking if kth elementis prime
         for(int i=2;i<=arr[k-1]/2;i++){
             if(arr[k-1]%i==0){
                 cout  << k<< " th element is not prime";
