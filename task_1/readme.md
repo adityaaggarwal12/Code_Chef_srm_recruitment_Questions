@@ -27,7 +27,8 @@ sum =+ arr[i];
 return sum;  
 }  
   
-### **No Error**   
+### ***Errors***
+•	In line 4- I should be <=len -1 if len is length of array   
 
 ### **Q3**  
 #include <stdio.h>  
