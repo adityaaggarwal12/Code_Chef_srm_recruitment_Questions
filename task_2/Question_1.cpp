@@ -10,11 +10,13 @@ void solve(int t){
 		cin >> n;
 		vector<string> v;
 		string s;
+		//adding the strings to a vector array
 		for(int i=0;i<n;i++){
 			cin >> s;
 			v.push_back(s);
 		}
 		unordered_map<char,int> u;
+		//adding the 4th or last element of string to map and the index if string
 		for(int i=0;i<n;i++){
 			if(v[i].size()>=4){
 				u[v[i][3]]=i+1;
@@ -23,6 +25,7 @@ void solve(int t){
 				u[v[i][v[i].size()-1]]=i+1;
 			}
 		}
+		//printing the strings aplhabecally
 		for(int i=0;i<26;i++){
 			if(u[((char)(97+i))]!=0){
 				cout<<v[u[((char)(97+i))]-1]<<"\n";
