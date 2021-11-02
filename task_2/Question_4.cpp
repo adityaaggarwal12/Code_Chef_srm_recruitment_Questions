@@ -31,7 +31,7 @@ void solve(int t){
             c*=10;
             c+=(int)(v[i])-48;
         }
-        cout <<c<< " " << a;
+        //cout <<c<< " " << a;
 
 
         if(a+c==n){
